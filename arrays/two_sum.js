@@ -1,20 +1,23 @@
-function twoSum(len, arr, target) {
-  let i = 0;
-  let j = len - 1;
-  arr.sort();
-  while (i < j) {
-    if (arr[i] + arr[j] == target) {
-      return [i, j];
-    } else if (arr[i] + arr[j] > target) {
-      j--;
-    } else {
-      i++;
+function twoSum(arr, target) {
+  let map = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    let currentnum = arr[i];
+    let compliment = target - currentnum;
+    if (map.has(compliment)) {
+      // existing num , current num -- indexs
+      return [map.get(compliment), i];
     }
+    map.set(currentnum, i);
   }
+  return [];
 }
 
-n = 5;
-arr = [2, 7, 11, 15, 3];
-target = 9;
+// Test
+let arr = [2, 7, 11, 15, 3];
+let target = 5;
+console.log(twoSum(arr, target)); // [0, 1]
 
-twoSum(n, arr, target);
+// idea : 
+// take a number and sub with target - compliment and check if the compliment is in map is yes return 
+// if not put ur number into the map 
