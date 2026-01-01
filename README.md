@@ -14,18 +14,17 @@ Focused preparation for Infosys Off-Campus (DSE).
 ## Goal
 
 .
-│
 ├── README.md
 │
 ├── arrays/
 │ ├── two_sum.js ✅
-│ ├── max_subarray_kadane.js ✅ - 2 variations (return sum , sum + subarray)
-│ ├── move_zeros.js ✅ - 2 variations
-│ ├── second_largest.js ✅ - 2 variations
-│ ├── rotate_array.js ✅ - 2 variation
-│ ├── remove_duplicates_sorted.js ✅ - 3 variation (frequency based)
-│ ├── subarray_given_sum.js ✅ - no variation btw (shittyyyy)
-│ └── missing_number.js ✅ - 2 variation
+│ ├── max_subarray_kadane.js ✅ (2 variations: sum | sum + subarray)
+│ ├── move_zeros.js ✅ (2 variations)
+│ ├── second_largest.js ✅ (2 variations)
+│ ├── rotate_array.js ✅ (2 variations)
+│ ├── remove_duplicates_sorted.js ✅ (3 variations – frequency based)
+│ ├── subarray_given_sum.js ✅
+│ └── missing_number.js ✅ (2 variations)
 │
 ├── strings/
 │ ├── anagram_check.js
@@ -36,7 +35,7 @@ Focused preparation for Infosys Off-Campus (DSE).
 │ ├── char_frequency.js
 │ └── valid_parentheses.js
 │
-├── linked_list/ - from striver ✅
+├── linked_list/ (Striver LL Sheet) ✅
 │ ├── reverse_ll.js
 │ ├── detect_cycle.js
 │ ├── find_middle.js
